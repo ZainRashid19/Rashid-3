@@ -2,6 +2,7 @@
 //
 */
 
+
 /* NOTE: MOVIES.JSON CONTAINS A LIST OF MOVIES AND ACCOMPANYING METADATA
 //
 //    They are in the following format:
@@ -21,33 +22,38 @@
 */
 
 
-const vue_app = Vue.createApp({ 
+
+
+const vue_app = Vue.createApp({
       // This automatically imports your movies.json file and puts it into
       //   the variable: movies
-      created () {
+      created() {
             fetch('movies.json').then(response => response.json()).then(json => {
                   this.movies = json
             })
       },
       data() {
-        return {
+            return {
 
-            // This holds your movies.json data.
-            movies: [],
-            /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
-            //added the values for my variables 
-      title: "IMDB + Zain's Top 8 Movies",
-     owner: 'Zain',
-     github : "https://github.com/ZainRashid19/Rashid-3.git",
-     
-     
+// milestone 1. Creating variables for the site 
+                  // This holds your movies.json data.
+                  movies: [],
+                  /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
+                  //added the values for my variables
+                  title: "IMDB + Zain's Top 8 Movies",
+                  owner: 'Zain',
+                  github: "https://github.com/ZainRashid19/Rashid-3.git",
 
-      }
-       
-    },
+
+
+
+            }
+
+      },
+      // milestone 4. Gets the dates and changes them into months 
       methods: {
-            getMonthText(dateArray){
-                  switch(dateArray[1]) {
+            getMonthText(dateArray) {
+                  switch (dateArray[1]) {
                         case 1:
                               month = "January";
                               break;
@@ -60,7 +66,7 @@ const vue_app = Vue.createApp({
                         case 4:
                               Month = "April";
                               break;
-                        case 5:S
+                        case 5: S
                               month = "May";
                               break;
                         case 6:
@@ -84,31 +90,52 @@ const vue_app = Vue.createApp({
                         case 12:
                               Month = "December";
                               break;
+                  }
+
+
+
+
+
+
+                  return Month + ' ' + dataArray[2] + ', ' + dataArray[1];
+
+                  /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
+            },
+
+
+            // milestone 4. Time text changes the time from minutes into minutes and horus 
+            timeText(minutes) {
+                  var h = Math.floor(minutes / 60)
+                  var m = minutes % 60
+                  return h + ' hours ' + m + ' minutes '
+            },
+//  Milestone 4. Poster click switches the pictures once you click them 
+            posterClick(movie){
+                  movie.posterindex++
+                  if(movie.posterindex>movie.posters.length-1){
+                        movie.posterindex=0
+                  }
+
             }
 
-          
-            
-            
-            
-            return Month + ' ' + dataArray[2] + ', ' + dataArray[1];
-         
-            /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
-      },
-
-      timeText(minutes){
-            var h=Math.floor(minutes / 60)
-            var m= minutes % 60
-            return h + ' hours ' + m + ' minutes '
-      },
-      
 
 
 
 
 
-}
-     
+
+
+
+
+
+      }
+
+
 
 })
 
+
 vue_app.mount("#vue_app")
+
+
+
