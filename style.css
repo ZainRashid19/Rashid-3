@@ -8,7 +8,6 @@ body {
     background-image: url(img/geometry.jpg);
 }
 
-
 /* This stylizes the header area */
 .header {
     padding: 15px;
@@ -18,13 +17,11 @@ body {
     color: white;
 }
 
-
 /* This stylizes the main page area */
 .main {
     background-color: #f2f2f2;
     padding: 40px 0;
 }
-
 
 /* This stylizes the poster area and poster images */
 .thumbnail {
@@ -42,16 +39,14 @@ body {
     border: 2px dashed black;
 }
 
-
 /* This stylizes your "Poster X of Y" text */
 .imageInfo {
-    color: #959595;
-    font-style: italic;
-    font-size: x-small;
-    float: right;
-    padding-right: 5px;
+	color: #959595;
+	font-style: italic;
+	font-size: x-small;
+	float: right;
+	padding-right: 5px;
 }
-
 
 /* This stylizes your Title and Rating Text */
 .title,
@@ -68,7 +63,6 @@ body {
     font-weight: 200;
 }
 
-
 /* This shapes your IMDB score area */
 .score {
     background-color: #39D1B4;
@@ -83,8 +77,8 @@ body {
     position: absolute;
     top: 50px;
     right: 25px;
+    border-radius: 50%;
 }
-
 
 /* This contains your like and dislike buttons */
 .social {
@@ -96,7 +90,6 @@ body {
     left: -40px;
     top: -20px;
 }
-
 
 /* This shapes your like and dislike buttons */
 .likes,
@@ -115,21 +108,15 @@ body {
     transition: 500ms;
 }
 
-
 /* This makes sure your Github Button is centered */
 .footer {
     text-align: center;
     margin: 80px 0 110px;
 }
 
-
 /* This makes sure your Github Button text is small */
 #github{
-    font-size: small;
+	font-size: small;
 }
 
-
 /* ADD YOUR LIKE AND DISLIKE HOVER/MOUSEOVER CSS CODE HERE */
-
-
-
