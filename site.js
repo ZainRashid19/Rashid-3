@@ -3,6 +3,8 @@
 */
 
 
+
+
 /* NOTE: MOVIES.JSON CONTAINS A LIST OF MOVIES AND ACCOMPANYING METADATA
 //
 //    They are in the following format:
@@ -24,6 +26,10 @@
 
 
 
+
+
+
+
 const vue_app = Vue.createApp({
       // This automatically imports your movies.json file and puts it into
       //   the variable: movies
@@ -35,7 +41,8 @@ const vue_app = Vue.createApp({
       data() {
             return {
 
-// milestone 1. Creating variables for the site 
+
+// milestone 1. Creating variables for the site
                   // This holds your movies.json data.
                   movies: [],
                   /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
@@ -47,10 +54,15 @@ const vue_app = Vue.createApp({
 
 
 
+
+
+
+
             }
 
+
       },
-      // milestone 4. Gets the dates and changes them into months 
+      // milestone 4. Gets the dates and changes them into months
       methods: {
             getMonthText(dateArray) {
                   switch (dateArray[1]) {
@@ -97,26 +109,47 @@ const vue_app = Vue.createApp({
 
 
 
+
+
+
+
+
+
                   return Month + ' ' + dataArray[2] + ', ' + dataArray[1];
+
 
                   /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
             },
 
 
-            // milestone 4. Time text changes the time from minutes into minutes and horus 
+
+
+            // milestone 4. Time text changes the time from minutes into minutes and horus
             timeText(minutes) {
                   var h = Math.floor(minutes / 60)
                   var m = minutes % 60
                   return h + ' hours ' + m + ' minutes '
             },
-//  Milestone 4. Poster click switches the pictures once you click them 
+//  Milestone 4. Poster click switches the pictures once you click them
             posterClick(movie){
                   movie.posterindex++
                   if(movie.posterindex>movie.posters.length-1){
                         movie.posterindex=0
                   }
 
+
             }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -132,10 +165,23 @@ const vue_app = Vue.createApp({
 
 
 
+
+
+
 })
 
 
+
+
 vue_app.mount("#vue_app")
+
+
+
+
+
+
+
+
 
 
 
