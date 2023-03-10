@@ -8,20 +8,30 @@ body {
     background-image: url(img/geometry.jpg);
 }
 
+
+
+
 /* This stylizes the header area */
 .header {
     padding: 15px;
 }
+
 .header h1 {
     display: inline-block;
     color: white;
 }
+
+
+
 
 /* This stylizes the main page area */
 .main {
     background-color: #f2f2f2;
     padding: 40px 0;
 }
+
+
+
 
 /* This stylizes the poster area and poster images */
 .thumbnail {
@@ -30,8 +40,9 @@ body {
     padding: 20px;
     margin: 20px;
     border-radius: 0;
-    background-color:#dddddd;
+    background-color: #dddddd;
 }
+
 .thumbnail img {
     margin-top: 10px;
     margin-bottom: 30px;
@@ -39,14 +50,20 @@ body {
     border: 2px dashed black;
 }
 
+
+
+
 /* This stylizes your "Poster X of Y" text */
 .imageInfo {
-	color: #959595;
-	font-style: italic;
-	font-size: x-small;
-	float: right;
-	padding-right: 5px;
+    color: #959595;
+    font-style: italic;
+    font-size: x-small;
+    float: right;
+    padding-right: 5px;
 }
+
+
+
 
 /* This stylizes your Title and Rating Text */
 .title,
@@ -56,12 +73,16 @@ body {
     font-size: 18px;
     font-weight: 800;
 }
+
 .released,
 .rated {
     color: #5d5d5d;
     font-size: 14px;
     font-weight: 200;
 }
+
+
+
 
 /* This shapes your IMDB score area */
 .score {
@@ -80,6 +101,9 @@ body {
     border-radius: 50%;
 }
 
+
+
+
 /* This contains your like and dislike buttons */
 .social {
     text-align: right;
@@ -90,6 +114,49 @@ body {
     left: -40px;
     top: -20px;
 }
+
+
+
+
+.likes {
+    background-color: #008700;
+    color: white;
+}
+
+
+.likes:hover {
+    background-color: #9edd87;
+    color: #008700;
+}
+
+
+.dislikes {
+    background-color: #f65a5b;
+    color: white;
+}
+
+
+.dislikes:hover {
+    background-color: #fdd6d6;
+    color: #F65A5B;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* This shapes your like and dislike buttons */
 .likes,
@@ -106,7 +173,12 @@ body {
     font-weight: 200;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: 500ms;
+
+
 }
+
+
+
 
 /* This makes sure your Github Button is centered */
 .footer {
@@ -114,9 +186,15 @@ body {
     margin: 80px 0 110px;
 }
 
+
+
+
 /* This makes sure your Github Button text is small */
-#github{
-	font-size: small;
+#github {
+    font-size: small;
 }
+
+
+
 
 /* ADD YOUR LIKE AND DISLIKE HOVER/MOUSEOVER CSS CODE HERE */
